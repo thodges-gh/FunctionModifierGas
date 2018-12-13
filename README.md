@@ -8,12 +8,18 @@ Compiling ./contracts/MyContract.sol...
 
   Contract: MyContract
     testFunction
-         41930
-      ✓ costs this much to run^ (93ms)
+         41952
+      ✓ costs this much to run^
     testModifier
-         41884
-      ✓ costs this much to run^ (63ms)
+         41906
+      ✓ costs this much to run^
+    setWithEquality
+         42008
+      ✓ costs this much to run^
+    setWithoutEquality
+         41838
+      ✓ costs this much to run^
 
 
-  2 passing (369ms)
+  4 passing (361ms)
 ```

@@ -20,4 +20,18 @@ contract("MyContract", () => {
       console.log("\t", tx.receipt.gasUsed)
     })
   })
+
+  describe("setWithEquality", () => {
+    it("costs this much to run^", async () => {
+      const tx = await mc.setWithEquality("test");
+      console.log("\t", tx.receipt.gasUsed)
+    })
+  })
+
+  describe("setWithoutEquality", () => {
+    it("costs this much to run^", async () => {
+      const tx = await mc.setWithoutEquality("test");
+      console.log("\t", tx.receipt.gasUsed)
+    })
+  })
 })
